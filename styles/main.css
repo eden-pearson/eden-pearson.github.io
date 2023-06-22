@@ -168,6 +168,48 @@ footer a:hover {
   border-radius: 50%;
 }
 
+.positioning-image {
+  height: auto;
+  width: 800px;
+}
+
+.blog-title {
+  margin: 150px 0 50px 0;
+  text-align: center;
+  width: 70%;
+}
+
+.blog-entry {
+  width: 70%;
+  text-align: justify;
+  line-height: 150%;
+  margin: 0 0 75px 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .positioning-image {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .positioning-image {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .positioning-image {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-entry {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .blog-post {
     width: 100%;
