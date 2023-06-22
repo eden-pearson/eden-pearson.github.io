@@ -1,0 +1,36 @@
+/* comments */
+
+div {
+  background-color: #f2c7ea;
+  padding: 50px;
+  width: 50%;
+}
+
+hr {
+  height: 3px;
+  background-color: pink;
+  border-color: pink;
+}
+body {
+  background-image: url(https://thumb.ac-illust.com/e1/e1cadad21b5cd7648136682557a1a929_t.jpeg);
+}
+.class {
+  font-family: sans-serif;
+}
+
+.flavor {
+  text-align: left;
+}
+.price {
+  text-align: right;
+}
+.item p {
+  display: inline-block;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: brown;
+}

@@ -1,0 +1,184 @@
+body {
+  background-color: #f9fafb;
+  font-family: 'Lexend Deca', sans serif;
+}
+
+a {
+  color: black;
+  text-align: center;
+}
+
+#navigation {
+  height: 100px;
+  position: fixed;
+  background-color: #f9fafb;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  box-shadow: 0 0 5px 0 gray;
+}
+
+.logo {
+  display: block;
+  padding: 0 25px 0 25px;
+}
+
+.navigation-bar {
+  text-align: right;
+  padding: 0 25px 25px 75%;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navigation-bar li {
+  float: left;
+}
+
+.navigation-bar a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 25px 0 25px;
+  display: block;
+  text-align: center;
+}
+
+.navigation-bar a:hover {
+  color: #233dff;
+}
+
+.intro {
+  font-family: cookie;
+  font-size: 30px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 25% 50px 25%;
+  justify-content: center;
+}
+
+#my-blog {
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  border-radius: 15px;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+.blog-post {
+  border-left: 10px solid #233dff;
+  padding: 15px 0 25px 0;
+  list-style-type: none;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  box-shadow: 2px 2px 4px #b8b8b8;
+}
+
+.date {
+  padding-right: 1rem;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.article-heading {
+  text-decoration: none;
+}
+
+.underline-text {
+  line-height: 1;
+  display: inline;
+  background-image: linear-gradient(to bottom, transparent 55%, #fcc0c0ca 45%);
+  background-size: 100% 200%;
+  transition: background-position 200ms ease-in-out;
+  font-weight: bold;
+}
+
+.underline-text:hover {
+  background-position: 100% 50%;
+}
+
+.core {
+  margin: 20px 0 0 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px #b8b8b8;
+  border-radius: 15px;
+  background-color: #eccbfcc8;
+  color: black;
+  padding: 5px 12px 5px 12px;
+}
+
+.tech {
+  margin: 20px 0 0 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px #b8b8b8;
+  border-radius: 15px;
+  background-color: #8eff90a8;
+  color: black;
+  padding: 5px 12px 5px 12px;
+}
+
+footer {
+  padding: 30px 25% 50px 25%;
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  border-top: 1px solid #dddada;
+}
+
+.hand-wave {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact-icons {
+  padding: 40px 0 0 0;
+}
+
+.contact-icons a {
+  padding: 0 15px 0 15px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  padding: 50px 0 0 0;
+  color: #b8b8b8;
+}
+
+footer a:hover {
+  color: grey;
+}
+
+.footer-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-post {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .blog-post {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .blog-post {
+    width: 30%;
+  }
+}
