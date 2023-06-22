@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <title>My blog</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/b4345ef38e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navigation">
+      <ul class="navigation-bar">
+        <li class="logo">
+          <img src="/photos/eden-pearson-logo.png" alt="eden pearson logo" />
+        </li>
+        <li class="float-right">
+          <a href="mailto:pearsoneden@gmail.com" id="nav-contact">Contact</a>
+        </li>
+        <li class="float-right">
+          <a href="https://eden-pearson.github.io/index.html" id="nav-blogs"
+            >Blogs</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <h1 class="blog-title">
+        Absolute, relative and fixed positioning: What's the difference?
+      </h1>
+      <div class="blog-entry">
+        <p>
+          First we need to picture every element on a website as a separate
+          block. Positioning refers to where exactly that block is sitting on
+          the webpage.
+        </p>
+        <p>
+          To start of with I have created three elements. By default all
+          elements have static positioning. Which means that the elements will
+          move when you scroll through the webpage.
+        </p>
+        <img
+          src="/photos/blocks-initial.png"
+          alt="Screenshot of code showing three different coloured blocks"
+          class="positioning-image"
+        />
+        <h3>Relative</h3>
+        <p>
+          Notice when I change the relative positioning of the yellow element,
+          the other two elements are unaffected. The element will move a certain
+          amount of pixels away from the side that you specify. Here I have told
+          the element to move 50 pixels away from the right side and 20 pixels
+          away from the top side. There is essentially a placeholder for your
+          elements default positioning, so the neighboring elements won't move.
+        </p>
+        <img
+          src="/photos/blocks-relative.png"
+          alt="Screenshot of code showing three different coloured blocks"
+          class="positioning-image"
+        />
+        <h3>Absolute</h3>
+        <p>
+          When you give an element absolute positioning it gets removed from the
+          normal document flow, so there is no placeholder for the elements
+          original position. Which means that the other elements move to fill up
+          the space that the element previously held. As you can see the red and
+          green elements have moved to fill the space that the yellow element
+          used to occupy, which causes the elements to appear overlapped.
+        </p>
+        <img
+          src="/photos/blocks-absolute.png"
+          alt="Screenshot of code showing three different coloured blocks"
+          class="positioning-image"
+        />
+        <h3>Fixed</h3>
+        <p>
+          The fixed position is similar to the absolute position. Here you can
+          see that the yellow block appears to have the same positioning even
+          though we have changed from absolute to relative positioning.
+        </p>
+        <img
+          src="/photos/blocks-fixed.png"
+          alt="Screenshot of code showing three different coloured blocks"
+          class="positioning-image"
+        />
+        <p>
+          However, you'll notice the difference when you scroll around the
+          webpage. The fixed block remains in the exact same position on the web
+          browser. Notice that the yellow block has stayed in the same spot
+          while the other two blocks have moved as I scrolled through the page.
+          Fixed positioning is very useful when creating a navigation bar on a
+          website as you want this navigation bar to be visible as you scroll
+          through the webpages content. Fixed elements are completely
+          independent of everything else on the webpage.
+        </p>
+        <img
+          src="/photos/blocks-fixed-scrolled.png"
+          alt="Screenshot of code showing three different coloured blocks"
+          class="positioning-image"
+        />
+        <h3>To Recap</h3>
+        <p>
+          Relative positioning means the positioning relative to an elements
+          original positioning. Absolute positioning defines an elements
+          position irrespective of an elements original positioning. Fixed
+          positioning is also irrespective of an elements original position and
+          it means the element will stay in the exact same spot even when the
+          webpage is scrolled.
+        </p>
+      </div>
+    </article>
+
+    <footer>
+      <div class="contact">
+        <h3>Contact Me</h3>
+        <p>
+          Keen to share your thoughts or concerns? Use one of the below links.
+        </p>
+      </div>
+      <div class="contact-icons">
+        <a href="https://github.com/eden-pearson"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        <a href="https://www.instagram.com/edenrosepearson/"
+          ><i class="fa-brands fa-instagram fa-xl"></i
+        ></a>
+        <a href="mailto:pearsoneden@gmail.com"
+          ><i class="fa-regular fa-envelope fa-xl"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>©Copyright 2023 by Eden Pearson. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
