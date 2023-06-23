@@ -20,7 +20,7 @@ a {
 }
 
 .logo {
-  height: 80px;
+  height: 100px;
   width: 130px;
 }
 
@@ -174,11 +174,11 @@ footer a:hover {
 
 .blog-title {
   text-align: justify;
-  margin: 0 0 20 30px;
+  margin: 0 0 30px 30px;
 }
 
 .blog-entry {
-  width: 70%;
+  wixdth: 70%;
   text-align: justify;
   line-height: 150%;
   margin: 0 0 75px 30px;
@@ -187,15 +187,16 @@ footer a:hover {
 .publish-date {
   margin: 150px 0 25px 30px;
   font-weight: lighter;
-}
-
-.author {
-  margin: 0 0 40px 30px;
-  font-style: italic;
+  color: rgb(88, 87, 87);
 }
 
 .recap {
   margin: 10px 0 10px 0;
+}
+
+span {
+  font-weight: bold;
+  color: #233dff;
 }
 
 @media screen and (max-width: 600px) {
