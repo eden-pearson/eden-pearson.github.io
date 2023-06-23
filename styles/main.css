@@ -26,6 +26,7 @@ a {
 
 .navigation-bar {
   list-style-type: none;
+  margin: 0px;
 }
 
 .navigation-bar li {
@@ -34,7 +35,7 @@ a {
 
 .float-right {
   float: right;
-  padding-top: 20px;
+  margin-top: 40px;
 }
 
 .navigation-bar a {
