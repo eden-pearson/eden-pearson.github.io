@@ -29,6 +29,7 @@ a {
 .navigation-bar {
   list-style-type: none;
   margin: 0px;
+  padding: 0;
 }
 
 .navigation-bar li {
@@ -43,7 +44,7 @@ a {
 .navigation-bar a {
   cursor: pointer;
   text-decoration: none;
-  padding: 0 25px 0 25px;
+  padding: 0 15px 0 15px;
   text-align: center;
 }
 
@@ -129,7 +130,7 @@ a {
 }
 
 footer {
-  padding: 30px 25% 50px 25%;
+  padding: 30px 15% 50px 15%;
   text-align: center;
   justify-content: center;
   align-content: space-around;
