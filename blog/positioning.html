@@ -1,13 +1,14 @@
 <html>
   <head>
     <title>Positioning: what is it?</title>
+    <link rel="stylesheet" href="../styles/main.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lexend+Deca"
     />
-    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="icon" type="image/png" href="/photos/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
     <script
       src="https://kit.fontawesome.com/b4345ef38e.js"
       crossorigin="anonymous"
@@ -40,52 +41,48 @@
       </h1>
       <div class="blog-entry">
         <p>
-          First we need to picture every element on a website as a separate
-          block. Positioning refers to where exactly that block is sitting on
-          the webpage.
+          When it comes to designing webpages, positioning plays a crucial role in determining how elements are arranged.
         </p>
         <p>
-          To start of with I have created three elements. By default all
-          elements have static positioning. Which means that the elements will
-          move when you scroll through the webpage.
+          To start with, I have created three elements. By default, these elements will all have static positioning. Elements that are statically positioned will appear on the page in what we call the normal flow, which refers to the default positioning of elements when no styling properties are applied.
         </p>
         <img
           src="/photos/blocks-initial.png"
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: <span>relative</span></h3>
+        <h3>Relative</h3>
         <p>
-          Notice when I change the relative positioning of the yellow element,
-          the other two elements are unaffected. The element will move a certain
-          amount of pixels away from the side that you specify. Here I have told
-          the element to move 50 pixels away from the right side and 20 pixels
-          away from the top side. There is essentially a placeholder for your
-          elements default positioning, so the neighboring elements won't move.
+          When you apply relative positioning to an element, it maintains its position in the normal flow. This means that there is essentially a placeholder for your
+          element's original positioning, so the neighbouring elements won't move when you reposition your element. You can use the <code>top</code> <code>bottom</code> <code>left</code>and <code>right</code> commands to specify how many pixels you want to move your element away from its original position.
+         Here I have told
+          the yellow element to move 50 pixels away from the right side and 20 pixels
+          away from the top side. Notice how the red and green elements were unaffected when I changed the relative positioning of the yellow element.
         </p>
         <img
           src="/photos/blocks-relative.png"
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: <span>absolute</span></h3>
+        <h3>Absolute</h3>
         <p>
-          When you give an element absolute positioning it gets removed from the
-          normal document flow, so there is no placeholder for the elements
-          original position. Which means that the other elements move to fill up
-          the space that the element previously held. As you can see the red and
+          When you apply absolute positioning to an element, it gets removed from the
+          normal document flow, so there is no placeholder for the element's
+          original position. This means that the other elements will move to fill up
+          the space that the element previously held. You can reposition the element using the <code>top</code> <code>bottom</code> <code>left</code>and <code>right</code> commands. However, this will specify the position relative to the viewport (the visible area of the browser window). 
+          Below I have repositioned the yellow element, and as a result, the red and
           green elements have moved to fill the space that the yellow element
-          used to occupy, which causes the elements to appear overlapped.
+          used to occupy.
         </p>
         <img
           src="/photos/blocks-absolute.png"
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: <span>fixed</span></h3>
+        <h3>Fixed</h3>
         <p>
-          The fixed position is similar to the absolute position. Here you can
-          see that the yellow block appears to have the same positioning even
+          Finally, we have fixed positioning. This is similar to absolute positioning in that the element's position is determined with respect to the viewport. Here you can
+          see that the yellow element appears to have the same positioning even
           though we have changed from absolute to relative positioning.
         </p>
         <img
@@ -94,14 +91,13 @@
           class="positioning-image"
         />
         <p>
-          However, you'll notice the difference when you scroll around the
-          webpage. The fixed block remains in the exact same position on the web
-          browser. Notice that the yellow block has stayed in the same spot
-          while the other two blocks have moved as I scrolled through the page.
-          Fixed positioning is very useful when creating a navigation bar on a
-          website as you want this navigation bar to be visible as you scroll
-          through the webpages content. Fixed elements are completely
-          independent of everything else on the webpage.
+       
+  However, you'll notice the difference when you scroll around the
+  webpage, as a fixed element will always remain in the same position on your screen. Notice that the yellow block has stayed in the same spot
+  while the other two elements have moved down as I scrolled up the page.
+  Fixed positioning is advantageous when creating a navigation bar on a
+  website, as you want this navigation bar to be visible as you scroll
+  through the webpage's content. 
         </p>
         <img
           src="/photos/blocks-fixed-scrolled.png"
@@ -110,21 +106,21 @@
         />
         <h3>To Recap</h3>
         <ul>
-          <li class="recap"><span>Relative:</span> The new positioning is relative to an elements
+          <li class="recap"><code>position: relative</code> The element remains in the normal flow and is repositioned relative to its
             original positioning.</li>
             <li class="recap">
-            <span>Absolute:</span> The new positioning is irrespective of an elements original positioning and instead is defined in terms of the webpage.
+            <code>position: absolute</code> The positioning is determined with respect to the viewport and the element is removed from the normal flow.
             </li>
             <li class="recap">
-              <span>Fixed:</span>
-          The new position is irrespective of an elements original position and
+              <code>position: fixed</code>
+          The positioning is determined with respect to the viewport and
           the element will stay in the exact same spot even when the
           webpage is scrolled.
             </li>
         </ul>
         </p>
       </div>
-      <i class="fa-regular fa-thumbs-up fa-xl"></i><i class="fa-regular fa-comment fa-xl"></i>
+      <!--<i class="fa-regular fa-thumbs-up fa-xl"></i><i class="fa-regular fa-comment fa-xl"></i>-->
     </article>
 
     <footer>
