@@ -52,9 +52,20 @@ a {
   color: #233dff;
 }
 
-.intro {
+.intro h2 {
   font-family: cookie;
   font-size: 30px;
+}
+
+.intro p {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.intro a {
+  text-decoration: none;
+  color: #233dff;
 }
 
 .bio {
@@ -143,7 +154,7 @@ footer {
   margin-left: 20px;
 }
 
-.contact {
+#contact {
   width: 100%;
 }
 
