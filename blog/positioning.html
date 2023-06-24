@@ -1,11 +1,12 @@
 <html>
   <head>
-    <title>My blog</title>
+    <title>Positioning: what is it?</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lexend+Deca"
     />
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="icon" type="image/png" href="/photos/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/b4345ef38e.js"
@@ -17,8 +18,8 @@
       <ul class="navigation-bar">
         <li>
           <img
-            src="/photos/eden-pearson-logo.png"
-            alt="eden pearson logo"
+            src="/photos/eden-minimalist-logo.png"
+            alt="eden logo"
             class="logo"
           />
         </li>
@@ -37,7 +38,6 @@
       <h1 class="blog-title">
         Absolute, relative and fixed positioning: What's the difference?
       </h1>
-      <h4 class="author">by <strong>Eden Pearson</strong></h4>
       <div class="blog-entry">
         <p>
           First we need to picture every element on a website as a separate
@@ -54,7 +54,7 @@
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: relative</h3>
+        <h3>position: <span>relative</span></h3>
         <p>
           Notice when I change the relative positioning of the yellow element,
           the other two elements are unaffected. The element will move a certain
@@ -68,7 +68,7 @@
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: absolute</h3>
+        <h3>position: <span>absolute</span></h3>
         <p>
           When you give an element absolute positioning it gets removed from the
           normal document flow, so there is no placeholder for the elements
@@ -82,7 +82,7 @@
           alt="Screenshot of code showing three different coloured blocks"
           class="positioning-image"
         />
-        <h3>position: fixed</h3>
+        <h3>position: <span>fixed</span></h3>
         <p>
           The fixed position is similar to the absolute position. Here you can
           see that the yellow block appears to have the same positioning even
@@ -110,13 +110,13 @@
         />
         <h3>To Recap</h3>
         <ul>
-          <li class="recap">Relative: The new positioning is relative to an elements
+          <li class="recap"><span>Relative:</span> The new positioning is relative to an elements
             original positioning.</li>
             <li class="recap">
-            Absolute: The new positioning is irrespective of an elements original positioning and instead is defined in terms of the webpage.
+            <span>Absolute:</span> The new positioning is irrespective of an elements original positioning and instead is defined in terms of the webpage.
             </li>
             <li class="recap">
-              Fixed:
+              <span>Fixed:</span>
           The new position is irrespective of an elements original position and
           the element will stay in the exact same spot even when the
           webpage is scrolled.
@@ -124,6 +124,7 @@
         </ul>
         </p>
       </div>
+      <i class="fa-regular fa-thumbs-up fa-xl"></i><i class="fa-regular fa-comment fa-xl"></i>
     </article>
 
     <footer>
