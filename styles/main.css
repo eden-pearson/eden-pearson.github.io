@@ -227,6 +227,19 @@ span {
   color: #233dff;
 }
 
+#object-person {
+  height: 200px;
+}
+#function-multiply {
+  height: 200px;
+}
+#array-fruits {
+  height: 120px;
+}
+#gym-loop {
+  height: 200px;
+}
+
 @media screen and (max-width: 600px) {
   .positioning-image {
     width: 100%;
