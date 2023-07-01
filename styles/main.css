@@ -241,19 +241,25 @@ span {
 }
 
 #DOM {
-  width: 90%;
+  width: 200x;
   margin: 20px 0 20px 0;
 }
 
 #button-HTML {
   margin: 20px 0 20px 0;
-  height: 60px;
+  height: 90px;
 }
 
 #button-transformation {
   margin: 20px 0 20px 0;
-  height: 80px;
+  height: 110px;
 }
+
+
+@media screen and (max-width: 600px) {
+  #DOM {
+    width: 100%;
+  }
 
 @media screen and (max-width: 600px) {
   .positioning-image {
