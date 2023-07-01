@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>JavaScript and the DOM</title>
+    <title>Javascript and the DOM</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lexend+Deca"
@@ -37,19 +37,20 @@
     </nav>
     <article>
       <p class="publish-date">June 30, 2023</p>
-      <h1 class="blog-title">JavaScript and the DOM</h1>
+      <h1 class="blog-title">Javascript and the DOM</h1>
       <div class="blog-entry">
-        <h3>Let's talk javaScript, HTML and CSS</h3>
+        <h3>Let's talk javascript, HTML and CSS</h3>
         <p>
-          Javascript, HTML and CSS all work together to create a dynamic webpage.<br><br>
-          HTML is like the skeleton of a human body. CSS is the skin and appearance of the human body. JavaScript is the nervous system of the body. It enables coordination between different parts of the body. It allows the human body to create actions as a response to external input. 
+          Javascript, HTML and CSS are all important parts of creating a dynamic webpage. So what role does each of these languages play?<br><br>
+          Lets imagine the human body. HTML is would be the skeleton of a human body, it provides the structure of a website. CSS would be the skin and appearance of the human body, it provides the styling of a website. Javascript would be the nervous system of the body. It enables coordination between different parts of the body and allows the human body to create actions as a response to different inputs. It adds functionality to a website. 
         </p>
         <h3>Control flow and loops</h3>
         <p>
+          Control flow and loops are fundamental concepts of javascript. 
           Control flow is the order in which the javascript code is executed.
 Loops allow you to repeat a certain part of the code until a certain condition is met
  <br /><br>
- I am going to use the activity of going to the gym as an example to explain control flow and loops.<br><br>The control flow:
+ I am going to use the example of going to the gym to explain control flow and loops.<br><br>The control flow:
  <ol>
   <li>Drive to the gym</li>
   <li>Swipe entry card</li>
@@ -60,22 +61,26 @@ Loops allow you to repeat a certain part of the code until a certain condition i
   <li>Exit the gym</li>
   <li>Drive home</li>
  </ol>
- A loop could be used for each exercise  included in your strength training workout. Here's an example of a loop used to perform 3 sets of 10 reps of bench press:</p>
+ A loop could be used for each exercise included in your strength training workout. Here's an example of a loop used to perform 3 sets of 10 reps of bench press:</p>
  <img src ="../photos/gym-loop.png" alt="For loop to perform a bench press" id ="gym-loop">
-        <h3>What is the DOM</h3>
+        <h3>The DOM</h3>
         <p>
-          Using the earlier analogy, the DOM is how the body is organized. <br /><br>The Dom allows javascript to manipulate our HTML and CSS. 
-        </p>
+          The DOM (document object model) is another essential concept in web development. The DOM is a tree-like representation of a webpages HTML document. It allows Javascript to access and manipulate elements in a webpage.  </p>  
+          <img src="../photos/DOM.webp" alt = "Diagram of the DOM" id ="DOM">
+          <p>An example of how you might interact with the DOM is using <code>document.getElementById()</code> which retrieves an element from the DOM using its unique ID. Once the element has been retrieved we can then manipulate it using javascript. In the below example I retrieved a button element and changed its text from being blank to saying "Click me!"</p>
+          <img src="../photos/button-HTML" id ="button-HTML"><br>
+          <img src="../photos/button-transformation" id="button-transformation">
+    
         <h3>Arrays and objects</h3>
-        <p>An array is an ordered collection of data. The elements in an array are indexed starting from 0. To access data from an array you use the data index value.</p>
+        <p>An array is an ordered collection of data. The elements in an array are indexed starting from 0. To access data from an array you use the datas index value.</p>
           <img src = "../photos/array.png" alt="Example of an array named fruits" id ="array-fruits"> 
-          <p>The console would log apple.</p>
+          <p>The console would log <code>apple</code>.</p>
           <p>To access properties within an object you use dot notation or bracket notation</p> 
           <img src="../photos/object.png" alt="Example of an object named person" id="object-person"> 
-          <p>The console would log Eden.</p>
+          <p>The console would log <code>Eden</code>.</p>
       <h3>Functions</h3>
-      <p>Functions are reusable blocks of code that perform a specific task. Functions are helpful because they help organize your code . They also improve the readability of the code as you can use descriptive names for functions. <br> <br> Here is an example of a function:</p>
-      <img src="../photos/function.png" alt = "Example of a function named multiply" id="function-multiply">
+      <p>Functions are reusable blocks of code that perform a specific task. Functions are helpful because they help organize your code and improve its readability. <br> <br> Here is an example of a function called multiply which takes two parameters and multiplies them together:</p>
+      <img src="../photos/function.png" alt = "Example of a function named multiply" id="function-multiply"><p>The console would log <code>54</code>.</p>
         </div>
     </article>
 

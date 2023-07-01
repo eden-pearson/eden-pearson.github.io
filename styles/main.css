@@ -228,16 +228,31 @@ span {
 }
 
 #object-person {
-  height: 200px;
+  height: 180px;
 }
 #function-multiply {
-  height: 200px;
+  height: 160px;
 }
 #array-fruits {
-  height: 120px;
+  height: 90px;
 }
 #gym-loop {
-  height: 200px;
+  height: 140px;
+}
+
+#DOM {
+  width: 90%;
+  margin: 20px 0 20px 0;
+}
+
+#button-HTML {
+  margin: 20px 0 20px 0;
+  height: 60px;
+}
+
+#button-transformation {
+  margin: 20px 0 20px 0;
+  height: 80px;
 }
 
 @media screen and (max-width: 600px) {
