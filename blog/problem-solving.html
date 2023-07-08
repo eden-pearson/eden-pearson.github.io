@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <title>Problem Solving</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca"
+    />
+    <link rel="icon" type="image/png" href="/photos/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/b4345ef38e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navigation">
+      <ul class="navigation-bar">
+        <li>
+          <a href="https://eden-pearson.github.io/index.html"
+            ><img
+              src="/photos/eden-minimalist-logo.png"
+              alt="eden logo"
+              class="logo"
+          /></a>
+        </li>
+        <li class="float-right">
+          <a href="#contact" id="nav-contact">Contact</a>
+        </li>
+        <li class="float-right">
+          <a href="https://eden-pearson.github.io/index.html" id="nav-blogs"
+            >Blogs</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <p class="publish-date">July 7, 2023</p>
+      <h1 class="blog-title">Problem Solving</h1>
+      <div class="blog-entry">
+        <p>
+          This week we were given a bunch of JavaScript Kata challenges to
+          solve. 'Kata' is a term that originates in martial arts and refers to
+          a series of repetitive challenges used to master a certain skill.
+          Solving these kata challenges has helped me to hone my problem solving
+          methods.
+        </p>
+        <h3>A time I was blocked by a simple problem:</h3>
+        <p>
+          I experienced feeling blocked when I was solving the deBee Kata. This
+          challenge involved writing a javascript program that takes a string
+          and case insensitively filters out the word 'buzz' and returns the
+          string. I started by solving the problem using pseudocode:
+        </p>
+        <img src="../photos/pseudocode-deBee.png" id="pseudocode-deBee" />
+        <p>
+          Converting the first and last step of my pseudocode into code was easy
+          as I knew I could use <code>split()</code> and <code>join()</code> to
+          transition between strings and arrays. Knowing how to filter out the
+          word buzz was a bit more tricky so I resorted to using google which
+          gave me instructions for using the <code>filter()</code> method. I
+          combined these three methods and I had a working function:
+        </p>
+        <img
+          src="../photos/deBee-case-sensitive.png"
+          id="deBee-case-sensitive"
+        />
+        <p>
+          However, my function was only filtering out exact matches for 'buzz'.
+          I needed to find a way to filter out all variations of the word buzz.
+          I knew that the toLowerCase method existed so I incorporated this into
+          my filter, however my program was continuously failing the tests. It
+          got to the point where I was getting very frustrated because i thought
+          I had done everything right yet my solution was still not working, so
+          I decided it would be best to take a break and solve the problem with
+          fresh eyes. I came back and revisited my function and that's when I
+          finally realised the mistake I had made... I forgot to include the
+          brackets after
+          <code>toLowerCase</code> so it wasn't acting as a function. Once I
+          added the brackets, my program passed all the tests and the challenge
+          was solved.
+        </p>
+        <img
+          src="../photos/deBee-case-insensitive.png"
+          id="deBee-case-insensitive"
+        />
+        <p>
+          I felt a sense of relief that the I had successfully solved the kata,
+          however, I simultaneously felt like a huge idiot for getting so
+          frustrated after making such a simple mistake. This situation
+          definitely taught me the importance of carefully proofreading my code
+          and making sure to get my syntax right.
+        </p>
+        <h3>A time I elegantly solved a problem:</h3>
+        <p>
+          The 'FizzBuzz' kata required me to write a function that took a number
+          and returned that number, unless it was divisible by 3, 5 or 15 in
+          which case the program would return 'Fizz', 'Buzz' or 'FizzBuzz'
+          respectively. I immediately saw this problem and thought that this
+          would be a perfect opportunity to use conditional statements. I also
+          remembered from last weeks javascript problem solving session that I
+          could use the remainder operator. I first tackled the program by using
+          pseudocode:
+        </p>
+        <img src="../photos/pseudocode-fizzbuzz.png" id="pseudocode-fizzbuzz" />
+        <p>
+          Then I replaced each section of my pseudocode with real code. During
+          which I was careful to make sure that I wasn't returning 'Buzz' or
+          'Fizz' for numbers that are divisible by 15:
+        </p>
+        <img
+          src="../photos/initial-code-fizzbuzz.png"
+          id="initial-code-fizzbuzz"
+        />
+        <p>
+          Once I confirmed that my function was working I decided to refactor my
+          code. I realised that due to the synchronous nature of javascript I
+          could reorder my conditional statements and remove the need for the
+          '&&' statements. Which lead my final code to look like this:
+        </p>
+        <img src="../photos/final-code-fizzbuzz.png" id="final-code-fizzbuzz" />
+        <p>
+          After I had successfully completed this challenge I felt a sense of
+          pride as it finally felt like I was making progress with my problem
+          solving skills.
+        </p>
+        <h3>Using different problem solving techniques:</h3>
+        <p>
+          Through solving the javascript kata I have realised that my favourite
+          problem solving techniques are:
+        </p>
+        <ul>
+          <li>pseudocode</li>
+          <li>console.logging</li>
+          <li>googling</li>
+          <li>reading error messages</li>
+          <li>trying something</li>
+          <li>improving my process with reflection</li>
+        </ul>
+        <br />
+        <p>Problem solving techniques I feel less confident about:</p>
+        <ul>
+          <li>asking peers for help</li>
+          <li>asking coaches for help</li>
+          <li>rubber-ducky method</li>
+        </ul>
+        <br />
+        <p>
+          This weeks problem solving sessions has made it obvious to me that the
+          techniques I am most reluctant to use is asking for help. This
+          reluctance stems from a stubbornness to be able to solve all of my own
+          problems and also a fear of being labeled as dumb if i am asking for
+          help on a very simple problem. In future I am going to work on
+          overcoming this reluctance by asking for help sooner rather than
+          later.
+        </p>
+      </div>
+    </article>
+
+    <footer>
+      <div id="contact">
+        <h3>Contact Me</h3>
+        <p>
+          Keen to share your thoughts or concerns? Use one of the below links.
+        </p>
+      </div>
+      <div class="contact-icons">
+        <a href="https://github.com/eden-pearson"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        <a href="https://www.instagram.com/edenrosepearson/"
+          ><i class="fa-brands fa-instagram fa-xl"></i
+        ></a>
+        <a href="mailto:pearsoneden@gmail.com"
+          ><i class="fa-regular fa-envelope fa-xl"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>©Copyright 2023 by Eden Pearson. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
