@@ -255,51 +255,50 @@ span {
   height: 110px;
 }
 
-#te-whare-tapa-wha-diagram{
+#te-whare-tapa-wha-diagram {
   margin: 20px 0 20px 0;
   width: 70%;
 }
 
-#te-whare-tapa-wha-table{
-  width: 50%;
+#te-whare-tapa-wha-table {
+  width: 70%;
 }
 
-#deBee-case-insensitive{
+#deBee-case-insensitive {
   margin: 20px 0 20px 0;
   width: 600px;
 }
 
-#initial-code-fizzbuzz{
+#initial-code-fizzbuzz {
   margin: 20px 0 20px 0;
   width: 400px;
 }
 
-#pseudocode-deBee{
+#pseudocode-deBee {
   margin: 20px 0 20px 0;
   width: 400px;
 }
 
-#deBee-case-sensitive{
+#deBee-case-sensitive {
   margin: 20px 0 20px 0;
   width: 600px;
 }
 
-#pseudocode-fizzbuzz{
+#pseudocode-fizzbuzz {
   margin: 20px 0 20px 0;
   width: 400px;
 }
 
-#final-code-fizzbuzz{
+#final-code-fizzbuzz {
   margin: 20px 0 20px 0;
   width: 300px;
 }
-
-
 
 @media screen and (max-width: 600px) {
   #DOM {
     width: 100%;
   }
+}
 
 @media screen and (max-width: 600px) {
   .positioning-image {
