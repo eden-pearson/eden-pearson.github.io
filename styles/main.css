@@ -255,6 +255,46 @@ span {
   height: 110px;
 }
 
+#te-whare-tapa-wha-diagram{
+  margin: 20px 0 20px 0;
+  width: 70%;
+}
+
+#te-whare-tapa-wha-table{
+  width: 50%;
+}
+
+#deBee-case-insensitive{
+  margin: 20px 0 20px 0;
+  width: 600px;
+}
+
+#initial-code-fizzbuzz{
+  margin: 20px 0 20px 0;
+  width: 400px;
+}
+
+#pseudocode-deBee{
+  margin: 20px 0 20px 0;
+  width: 400px;
+}
+
+#deBee-case-sensitive{
+  margin: 20px 0 20px 0;
+  width: 600px;
+}
+
+#pseudocode-fizzbuzz{
+  margin: 20px 0 20px 0;
+  width: 400px;
+}
+
+#final-code-fizzbuzz{
+  margin: 20px 0 20px 0;
+  width: 300px;
+}
+
+
 
 @media screen and (max-width: 600px) {
   #DOM {
